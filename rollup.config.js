@@ -39,7 +39,7 @@ const plugins = [
 
 export default [
   {
-    input: 'src/boilerplate-card.ts',
+    input: 'src/ha-dwd-forecast.ts',
     output: {
       dir: 'dist',
       format: 'es',
