@@ -10,7 +10,7 @@ import { selectDefinition } from '../elements/select';
 import { switchDefinition } from '../elements/switch';
 import { textfieldDefinition } from '../elements/textfield';
 
-@customElement('hadwdforecast-card-editor')
+@customElement('ha-dwd-forecast-editor'')
 export class HADWDForecastEditor extends ScopedRegistryHost(LitElement) implements LovelaceCardEditor {
   @property({ attribute: false }) public hass?: HomeAssistant;
 
