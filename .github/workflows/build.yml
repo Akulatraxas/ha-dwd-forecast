@@ -9,7 +9,7 @@ on:
     branches:
       - master
       - dev
-
+      
 jobs:
   build:
     name: Test build

@@ -26,17 +26,17 @@ console.info(
 // This puts your card into the UI card picker dialog
 (window as any).customCards = (window as any).customCards || [];
 (window as any).customCards.push({
-  type: 'boilerplate-card',
-  name: 'Boilerplate Card',
+  type: 'ha-dwd-forecast',
+  name: 'DWD Forecasts',
   description: 'A template custom card for you to create something awesome',
 });
 
 // TODO Name your custom element
-@customElement('boilerplate-card')
-export class BoilerplateCard extends LitElement {
+@customElement('ha-dwd-forecast')
+export class DWDForecast extends LitElement {
   public static async getConfigElement(): Promise<LovelaceCardEditor> {
     await import('./editor');
-    return document.createElement('boilerplate-card-editor');
+    return document.createElement('ha-dwd-forecast-editor');
   }
 
   public static getStubConfig(): Record<string, unknown> {
@@ -61,7 +61,7 @@ export class BoilerplateCard extends LitElement {
     }
 
     this.config = {
-      name: 'Boilerplate',
+      name: 'DWDForecast',
       ...config,
     };
   }
