@@ -2,7 +2,7 @@ import { ActionConfig, LovelaceCard, LovelaceCardConfig, LovelaceCardEditor } fr
 
 declare global {
   interface HTMLElementTagNameMap {
-    'hadwdforecast-card-editor': LovelaceCardEditor;
+    'boilerplate-card-editor': LovelaceCardEditor;
     'hui-error-card': LovelaceCard;
   }
 }
